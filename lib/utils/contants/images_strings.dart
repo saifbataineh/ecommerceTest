@@ -6,7 +6,7 @@ class TImages {
       'assets/logos/t-store-splash-logo-white.png';
   //--social logos
   static const String google = 'assets/logos/google-icon.png';
-  static const String facebook = 'assets/logos/facebook-icon.png';
+  static const String facebook = 'assets/logos/facebook-icon.jpg';
   //--on borading gifs
   static const String onBoradingScreen1 =
       'assets/images/on_borading_gifs/searching_guy.gif';
