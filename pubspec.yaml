@@ -72,6 +72,7 @@ flutter:
     - assets/logos/brands/
     - assets/icons/
     - assets/images/
+    - assets/images/gifs/
     - assets/images/on_borading_gifs/
 
   # An image asset can refer to one or more resolution-specific "variants", see

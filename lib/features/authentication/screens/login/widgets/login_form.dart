@@ -1,4 +1,6 @@
+import 'package:ecommerce/features/authentication/screens/password_config/password_forget.dart';
 import 'package:ecommerce/features/authentication/screens/sign_up/sign_up_screen.dart';
+import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/contants/sizes.dart';
 import 'package:ecommerce/utils/contants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -14,8 +16,7 @@ class LoginFormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-            vertical: TSized.spaceBtwSetions),
+        padding: const EdgeInsets.symmetric(vertical: TSized.spaceBtwSetions),
         child: Column(
           spacing: TSized.defaultSpace,
           children: [
@@ -44,19 +45,21 @@ class LoginFormWidget extends StatelessWidget {
                     const Text(TTexts.rememberMe)
                   ],
                 ),
+                //forgetPassword
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => PasswordForget()),
                     child: Text(TTexts.forgetPassword))
               ],
             ),
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text(TTexts.signIn))),
+                    onPressed: () => Get.to(() => NavigationMenu()),
+                    child: Text(TTexts.signIn))),
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: ()=>Get.to(()=>SignUpScreen()),
+                onPressed: () => Get.to(() => SignUpScreen()),
                 child: Text(TTexts.createAccount),
               ),
             ),
@@ -66,4 +69,3 @@ class LoginFormWidget extends StatelessWidget {
     );
   }
 }
-
