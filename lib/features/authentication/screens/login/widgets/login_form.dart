@@ -1,8 +1,8 @@
 import 'package:ecommerce/features/authentication/screens/password_config/password_forget.dart';
 import 'package:ecommerce/features/authentication/screens/sign_up/sign_up_screen.dart';
 import 'package:ecommerce/navigation_menu.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -16,7 +16,7 @@ class LoginFormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: TSized.spaceBtwSetions),
+        padding:  const EdgeInsets.symmetric(vertical: TSized.spaceBtwSections),
         child: Column(
           spacing: TSized.defaultSpace,
           children: [

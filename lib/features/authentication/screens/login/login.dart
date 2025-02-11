@@ -3,8 +3,8 @@ import 'package:ecommerce/common/widgets/login_signup/social_logo.dart';
 import 'package:ecommerce/common/widgets/login_signup/divider_widget.dart';
 import 'package:ecommerce/features/authentication/screens/login/widgets/header_login.dart';
 import 'package:ecommerce/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +29,7 @@ class LoginScreen extends StatelessWidget {
               LoginFormWidget(),
               DividerWidget(isDark: isDark,dividerText: TTexts.orSignInWith.capitalize!,),
               const SizedBox(
-                height: TSized.spaceBtwSetions,
+                height: TSized.spaceBtwSections,
               ),
               SocialWidget()
             ],

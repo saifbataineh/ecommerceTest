@@ -1,6 +1,6 @@
-import 'package:ecommerce/utils/contants/images_strings.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class HeaderLoginScreen extends StatelessWidget {

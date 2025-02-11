@@ -1,4 +1,4 @@
-import 'package:ecommerce/utils/contants/sizes.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

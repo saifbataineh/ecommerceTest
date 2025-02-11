@@ -3,14 +3,14 @@ import 'package:ecommerce/features/authentication/screens/onboarding/widgets/on_
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/on_boarding_page.dart';
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/on_borading_next_btn.dart';
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/on_borading_skip.dart';
-import 'package:ecommerce/utils/contants/images_strings.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class OnboradingScreen extends StatelessWidget {
-   OnboradingScreen({super.key});
+   const OnboradingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

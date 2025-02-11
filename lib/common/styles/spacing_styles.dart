@@ -1,4 +1,4 @@
-import 'package:ecommerce/utils/contants/sizes.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/widgets.dart';
 
 class TSpacingStyle{

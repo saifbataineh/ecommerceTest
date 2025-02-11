@@ -1,11 +1,8 @@
 import 'package:ecommerce/common/styles/spacing_styles.dart';
-import 'package:ecommerce/features/authentication/screens/login/login.dart';
-import 'package:ecommerce/utils/contants/images_strings.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen(
@@ -32,7 +29,7 @@ class SuccessScreen extends StatelessWidget {
                 width: THelperFunction.screenWidth() * 0.6,
               ),
               SizedBox(
-                height: TSized.spaceBtwSetions,
+                height: TSized.spaceBtwSections,
               ),
 
               //title & subtitle
@@ -51,7 +48,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwSetions,
+                height: TSized.spaceBtwSections,
               ),
 
               //buttons

@@ -1,13 +1,11 @@
-import 'package:ecommerce/app.dart';
-import 'package:ecommerce/utils/contants/images_strings.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:iconsax/iconsax.dart';
+
 
 class PasswordReset extends StatelessWidget {
   const PasswordReset({super.key});
@@ -35,7 +33,7 @@ class PasswordReset extends StatelessWidget {
                 width: THelperFunction.screenWidth() * 0.6,
               ),
               SizedBox(
-                height: TSized.spaceBtwSetions,
+                height: TSized.spaceBtwSections,
               ),
 
               //title & subtitle
@@ -54,7 +52,7 @@ class PasswordReset extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwSetions,
+                height: TSized.spaceBtwSections,
               ),
 
               //buttons

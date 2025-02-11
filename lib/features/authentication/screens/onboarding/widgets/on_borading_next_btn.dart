@@ -1,6 +1,6 @@
 import 'package:ecommerce/features/authentication/controllers/onborading_controller.dart';
-import 'package:ecommerce/utils/contants/colors.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';

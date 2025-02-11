@@ -1,8 +1,8 @@
-import 'package:ecommerce/utils/contants/colors.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class TCircularContainer extends StatelessWidget {
-  const TCircularContainer({
+class CircularContainer extends StatelessWidget {
+  const CircularContainer({
     super.key,
     this.width = 400,
     this.height = 400,
@@ -10,20 +10,23 @@ class TCircularContainer extends StatelessWidget {
     this.padding = 400,
     this.child,
     this.backgroundColor = TColors.white,
+    this.margin,
   });
   final double? width, height;
   final double radius, padding;
+  final EdgeInsetsGeometry? margin;
   final Widget? child;
   final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: margin,
       width: width,
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: TColors.textWhite.withValues(alpha: 0.1),
+        color: backgroundColor,
         borderRadius: BorderRadius.circular(400),
       ),
       child: child,

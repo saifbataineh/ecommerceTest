@@ -1,8 +1,7 @@
 import 'package:ecommerce/features/authentication/screens/sign_up/verify_email_screen.dart';
 import 'package:ecommerce/features/authentication/screens/sign_up/widgets/terms_and_condtiotions_check_box.dart';
-import 'package:ecommerce/utils/contants/colors.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -88,7 +87,7 @@ class SignUpForm extends StatelessWidget {
           TermsAndConditionsCheckBox(isDark: isDark),
           //sign up button
           const SizedBox(
-            height: TSized.spaceBtwSetions,
+            height: TSized.spaceBtwSections,
           ),
           SizedBox(
               width: double.infinity,

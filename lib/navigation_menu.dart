@@ -1,10 +1,10 @@
 import 'package:ecommerce/features/shop/screens/home/home_screen.dart';
-import 'package:ecommerce/utils/contants/colors.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
+
 import 'package:iconsax/iconsax.dart';
 
 class NavigationMenu extends StatelessWidget {

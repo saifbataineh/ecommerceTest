@@ -1,9 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import 'package:ecommerce/utils/contants/colors.dart';
-import 'package:ecommerce/utils/contants/images_strings.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
+import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
 
 class SocialWidget extends StatelessWidget {
  

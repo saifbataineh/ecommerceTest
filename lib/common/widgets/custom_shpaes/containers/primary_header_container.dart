@@ -1,6 +1,6 @@
 import 'package:ecommerce/common/widgets/custom_shpaes/containers/circular_container.dart';
 import 'package:ecommerce/common/widgets/custom_shpaes/curved_edges/curved_edges_widget.dart';
-import 'package:ecommerce/utils/contants/colors.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:flutter/cupertino.dart';
 
 class PrimaryHeaderContainer extends StatelessWidget {
@@ -21,14 +21,14 @@ class PrimaryHeaderContainer extends StatelessWidget {
             Positioned(
               top: -150,
               right: -250,
-              child: TCircularContainer(
+              child: CircularContainer(
                 backgroundColor: TColors.textWhite.withValues(alpha: 0.1),
               ),
             ),
             Positioned(
               top: 100,
               right: -300,
-              child: TCircularContainer(
+              child: CircularContainer(
                 backgroundColor:TColors.textWhite.withValues(alpha: 0.1),
               ),
             ),

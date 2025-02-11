@@ -1,4 +1,4 @@
-import 'package:ecommerce/utils/contants/colors.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 

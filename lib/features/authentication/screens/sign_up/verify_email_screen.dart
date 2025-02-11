@@ -1,8 +1,8 @@
 import 'package:ecommerce/common/widgets/success_screen/success_screen.dart';
 import 'package:ecommerce/features/authentication/screens/login/login.dart';
-import 'package:ecommerce/utils/contants/images_strings.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +36,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 width: THelperFunction.screenWidth() * 0.6,
               ),
               SizedBox(
-                height: TSized.spaceBtwSetions,
+                height: TSized.spaceBtwSections,
               ),
 
               //title & subtitle
@@ -62,7 +62,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwSetions,
+                height: TSized.spaceBtwSections,
               ),
 
               //buttons

@@ -1,7 +1,6 @@
-import 'package:ecommerce/app.dart';
 import 'package:ecommerce/features/authentication/screens/password_config/password_reset.dart';
-import 'package:ecommerce/utils/contants/sizes.dart';
-import 'package:ecommerce/utils/contants/text_strings.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -31,7 +30,7 @@ class PasswordForget extends StatelessWidget {
               style: Theme.of(context).textTheme.labelMedium,
             ),
             SizedBox(
-              height: TSized.spaceBtwSetions * 2,
+              height: TSized.spaceBtwSections * 2,
             ),
             //text fields
             TextFormField(
@@ -41,7 +40,7 @@ class PasswordForget extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: TSized.spaceBtwSetions,
+              height: TSized.spaceBtwSections,
             ),
             //submit button
             SizedBox(
