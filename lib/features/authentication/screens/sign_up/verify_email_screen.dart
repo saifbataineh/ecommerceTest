@@ -25,7 +25,7 @@ class VerifyEmailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         //padding to give drafult spacing
         child: Padding(
-          padding: EdgeInsets.all(TSized.defaultSpace),
+          padding: EdgeInsets.all(AppSizes.defaultSpace),
           child: Column(
             children: [
               //image
@@ -33,10 +33,10 @@ class VerifyEmailScreen extends StatelessWidget {
                 image: AssetImage(
                   TImages.deleiveredEmailIllustartion,
                 ),
-                width: THelperFunction.screenWidth() * 0.6,
+                width: HelperFunction.screenWidth() * 0.6,
               ),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
 
               //title & subtitle
@@ -46,7 +46,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwItems,
+                height: AppSizes.spaceBtwItems,
               ),
               Text(
                 "saifbbataineh@gmail.com",
@@ -54,7 +54,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwItems,
+                height: AppSizes.spaceBtwItems,
               ),
               Text(
                 TTexts.confirmEmailSubTitle,
@@ -62,7 +62,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
 
               //buttons
@@ -78,7 +78,7 @@ class VerifyEmailScreen extends StatelessWidget {
                     child: Text(TTexts.continues)),
               ),
               SizedBox(
-                height: TSized.spaceBtwItems,
+                height: AppSizes.spaceBtwItems,
               ),
               SizedBox(
                 width: double.infinity,

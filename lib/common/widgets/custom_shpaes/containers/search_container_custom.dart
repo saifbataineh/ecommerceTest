@@ -12,7 +12,8 @@ class CustomSearchBar extends StatelessWidget {
     required this.text,
     this.icon = Iconsax.search_normal,
     this.showBackground = true,
-    this.showBorder = true, this.onTap,
+    this.showBorder = true,
+    this.onTap,
   });
   final VoidCallback? onTap;
   final String text;
@@ -21,14 +22,13 @@ class CustomSearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = THelperFunction.isDarkMode(context);
+    final isDark = HelperFunction.isDarkMode(context);
     return GestureDetector(
-      
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: TSized.defaultSpace),
+        padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
         child: Container(
           width: TDeviceUtils.getScreenWidth(),
-          padding: EdgeInsets.all(TSized.md),
+          padding: EdgeInsets.all(AppSizes.md),
           decoration: BoxDecoration(
               color: showBackground
                   ? isDark
@@ -36,7 +36,7 @@ class CustomSearchBar extends StatelessWidget {
                       : TColors.light
                   : Colors.transparent,
               borderRadius: BorderRadius.circular(
-                TSized.cardRadiusLg,
+                AppSizes.cardRadiusLg,
               ),
               border: showBorder ? Border.all(color: TColors.grey) : null),
           child: Row(
@@ -46,7 +46,7 @@ class CustomSearchBar extends StatelessWidget {
                 color: TColors.grey,
               ),
               SizedBox(
-                width: TSized.spaceBtwItems,
+                width: AppSizes.spaceBtwItems,
               ),
               Text(
                 text,

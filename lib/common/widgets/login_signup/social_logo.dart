@@ -6,16 +6,14 @@ import 'package:ecommerce/utils/constants/images_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 
 class SocialWidget extends StatelessWidget {
- 
   const SocialWidget({
     super.key,
-   
   });
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      spacing: TSized.spaceBtwItems,
+      spacing: AppSizes.spaceBtwItems,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
@@ -27,8 +25,8 @@ class SocialWidget extends StatelessWidget {
           child: IconButton(
               onPressed: () {},
               icon: const Image(
-                  width: TSized.iconMd,
-                  height: TSized.iconMd,
+                  width: AppSizes.iconMd,
+                  height: AppSizes.iconMd,
                   image: AssetImage(TImages.google))),
         ),
         Container(
@@ -40,8 +38,8 @@ class SocialWidget extends StatelessWidget {
           child: IconButton(
             onPressed: () {},
             icon: const Image(
-              width: TSized.iconMd,
-              height: TSized.iconMd,
+              width: AppSizes.iconMd,
+              height: AppSizes.iconMd,
               image: AssetImage(TImages.facebook),
             ),
           ),

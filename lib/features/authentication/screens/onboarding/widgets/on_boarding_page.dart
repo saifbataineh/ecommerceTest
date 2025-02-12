@@ -2,10 +2,8 @@ import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
-
-
 class OnBoradingPage extends StatelessWidget {
-   const OnBoradingPage({
+  const OnBoradingPage({
     super.key,
     required this.image,
     required this.title,
@@ -16,13 +14,13 @@ class OnBoradingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(TSized.defaultSpace),
+      padding: const EdgeInsets.all(AppSizes.defaultSpace),
       child: Column(
         children: [
           Image(
             image: AssetImage(image),
-            width: THelperFunction.screenWidth() * 0.8,
-            height: THelperFunction.screenHeight() * 0.6,
+            width: HelperFunction.screenWidth() * 0.8,
+            height: HelperFunction.screenHeight() * 0.6,
           ),
           Text(
             title,
@@ -30,7 +28,7 @@ class OnBoradingPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(
-            height: TSized.spaceBtwItems,
+            height: AppSizes.spaceBtwItems,
           ),
           Text(
             subTitle,

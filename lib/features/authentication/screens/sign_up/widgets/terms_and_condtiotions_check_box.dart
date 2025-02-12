@@ -18,10 +18,9 @@ class TermsAndConditionsCheckBox extends StatelessWidget {
         SizedBox(
             width: 24,
             height: 24,
-            child:
-                Checkbox(value: true, onChanged: (value) {})),
+            child: Checkbox(value: true, onChanged: (value) {})),
         SizedBox(
-          width: TSized.spaceBtwItems,
+          width: AppSizes.spaceBtwItems,
         ),
         Flexible(
           child: Text.rich(
@@ -31,40 +30,24 @@ class TermsAndConditionsCheckBox extends StatelessWidget {
               children: [
                 TextSpan(
                     text: ' ${TTexts.iAgreeTo} ',
-                    style:
-                        Theme.of(context).textTheme.bodySmall),
+                    style: Theme.of(context).textTheme.bodySmall),
                 TextSpan(
                     text: '${TTexts.privacyPolicy} ',
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium!
-                        .apply(
-                            color: isDark
-                                ? TColors.white
-                                : TColors.primary,
-                            decorationColor: isDark
-                                ? TColors.white
-                                : TColors.primary,
-                            decoration:
-                                TextDecoration.underline)),
+                    style: Theme.of(context).textTheme.bodyMedium!.apply(
+                        color: isDark ? TColors.white : TColors.primary,
+                        decorationColor:
+                            isDark ? TColors.white : TColors.primary,
+                        decoration: TextDecoration.underline)),
                 TextSpan(
                     text: ' ${TTexts.and} ',
-                    style:
-                        Theme.of(context).textTheme.bodySmall),
+                    style: Theme.of(context).textTheme.bodySmall),
                 TextSpan(
                     text: TTexts.termsOfUse,
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium!
-                        .apply(
-                            color: isDark
-                                ? TColors.white
-                                : TColors.primary,
-                            decorationColor: isDark
-                                ? TColors.white
-                                : TColors.primary,
-                            decoration:
-                                TextDecoration.underline)),
+                    style: Theme.of(context).textTheme.bodyMedium!.apply(
+                        color: isDark ? TColors.white : TColors.primary,
+                        decorationColor:
+                            isDark ? TColors.white : TColors.primary,
+                        decoration: TextDecoration.underline)),
               ],
             ),
           ),

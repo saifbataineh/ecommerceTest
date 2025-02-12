@@ -31,7 +31,7 @@ class SignUpForm extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: TSized.spaceBtwInputFields,
+                width: AppSizes.spaceBtwInputFields,
               ),
               Expanded(
                 child: TextFormField(
@@ -45,7 +45,7 @@ class SignUpForm extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: TSized.spaceBtwInputFields,
+            height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
             expands: false,
@@ -55,7 +55,7 @@ class SignUpForm extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: TSized.spaceBtwInputFields,
+            height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
             expands: false,
@@ -65,7 +65,7 @@ class SignUpForm extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: TSized.spaceBtwInputFields,
+            height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
             expands: false,
@@ -75,7 +75,7 @@ class SignUpForm extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: TSized.spaceBtwInputFields,
+            height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
             expands: false,
@@ -87,7 +87,7 @@ class SignUpForm extends StatelessWidget {
           TermsAndConditionsCheckBox(isDark: isDark),
           //sign up button
           const SizedBox(
-            height: TSized.spaceBtwSections,
+            height: AppSizes.spaceBtwSections,
           ),
           SizedBox(
               width: double.infinity,

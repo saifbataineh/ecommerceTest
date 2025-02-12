@@ -25,7 +25,7 @@ class HeaderLoginScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         SizedBox(
-          height: TSized.sm,
+          height: AppSizes.sm,
         ),
         Text(
           TTexts.loginSubTitle,

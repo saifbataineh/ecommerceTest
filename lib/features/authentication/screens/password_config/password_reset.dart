@@ -6,7 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class PasswordReset extends StatelessWidget {
   const PasswordReset({super.key});
 
@@ -22,7 +21,7 @@ class PasswordReset extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSized.defaultSpace),
+          padding: EdgeInsets.all(AppSizes.defaultSpace),
           child: Column(
             children: [
               //image
@@ -30,10 +29,10 @@ class PasswordReset extends StatelessWidget {
                 image: AssetImage(
                   TImages.deleiveredEmailIllustartion,
                 ),
-                width: THelperFunction.screenWidth() * 0.6,
+                width: HelperFunction.screenWidth() * 0.6,
               ),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
 
               //title & subtitle
@@ -43,7 +42,7 @@ class PasswordReset extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwItems,
+                height: AppSizes.spaceBtwItems,
               ),
 
               Text(
@@ -52,7 +51,7 @@ class PasswordReset extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
 
               //buttons
@@ -62,7 +61,7 @@ class PasswordReset extends StatelessWidget {
                     ElevatedButton(onPressed: () {}, child: Text(TTexts.done)),
               ),
               SizedBox(
-                height: TSized.spaceBtwItems,
+                height: AppSizes.spaceBtwItems,
               ),
               SizedBox(
                 width: double.infinity,

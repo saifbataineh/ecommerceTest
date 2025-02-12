@@ -16,9 +16,10 @@ class LoginFormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding:  const EdgeInsets.symmetric(vertical: TSized.spaceBtwSections),
+        padding:
+            const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwSections),
         child: Column(
-          spacing: TSized.defaultSpace,
+          spacing: AppSizes.defaultSpace,
           children: [
             TextFormField(
               decoration: InputDecoration(
@@ -33,7 +34,7 @@ class LoginFormWidget extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: TSized.defaultSpace,
+              height: AppSizes.defaultSpace,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

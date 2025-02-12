@@ -26,17 +26,17 @@ class HorizontalImageText extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.only(right: TSized.spaceBtwItems),
+        padding: const EdgeInsets.only(right: AppSizes.spaceBtwItems),
         child: Column(
           children: [
             //circular icon
             Container(
               width: 56,
               height: 56,
-              padding: EdgeInsets.all(TSized.sm),
+              padding: EdgeInsets.all(AppSizes.sm),
               decoration: BoxDecoration(
                 color: backgroundColor ??
-                    (THelperFunction.isDarkMode(context)
+                    (HelperFunction.isDarkMode(context)
                         ? TColors.black
                         : TColors.white),
                 borderRadius: BorderRadius.circular(100),
@@ -45,13 +45,13 @@ class HorizontalImageText extends StatelessWidget {
                 child: Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: (THelperFunction.isDarkMode(context)
+                  color: (HelperFunction.isDarkMode(context)
                       ? TColors.light
                       : TColors.dark),
                 ),
               ),
             ),
-            SizedBox(height: TSized.spaceBtwItems / 2),
+            SizedBox(height: AppSizes.spaceBtwItems / 2),
             SizedBox(
               width: 55,
               child: Text(

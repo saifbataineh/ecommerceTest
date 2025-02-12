@@ -11,7 +11,8 @@ import 'package:get/get.dart';
 class HomeSlider extends StatelessWidget {
   final controller = Get.put(HomeController());
   HomeSlider({
-    super.key, required this.banners,
+    super.key,
+    required this.banners,
   });
   final List<String> banners;
 
@@ -28,7 +29,7 @@ class HomeSlider extends StatelessWidget {
               }),
         ),
         const SizedBox(
-          height: TSized.spaceBtwItems,
+          height: AppSizes.spaceBtwItems,
         ),
         Obx(
           () => Row(

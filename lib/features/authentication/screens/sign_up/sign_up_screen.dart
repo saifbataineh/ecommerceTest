@@ -13,12 +13,12 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = THelperFunction.isDarkMode(context);
+    final isDark = HelperFunction.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSized.defaultSpace),
+          padding: EdgeInsets.all(AppSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -28,17 +28,17 @@ class SignUpScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ), //form
               SignUpForm(isDark: isDark),
               SizedBox(
-                height: TSized.spaceBtwItems,
-              ), 
+                height: AppSizes.spaceBtwItems,
+              ),
               //Divider
               DividerWidget(
                   dividerText: TTexts.orSignUpWith.capitalize!, isDark: isDark),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
               const SocialWidget()
             ],

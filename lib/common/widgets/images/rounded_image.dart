@@ -13,9 +13,9 @@ class RoundedImage extends StatelessWidget {
     this.backgroundColor = TColors.light,
     this.fit = BoxFit.contain,
     this.padding,
-    this.isNetworkImage = false, 
+    this.isNetworkImage = false,
     this.onPressed,
-    this.borderRadius = TSized.md,
+    this.borderRadius = AppSizes.md,
   });
   final double? width, height;
   final String imageUrl;
@@ -31,6 +31,7 @@ class RoundedImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: onPressed,
       child: Container(
         width: width,
         height: height,

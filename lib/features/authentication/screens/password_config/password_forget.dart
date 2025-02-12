@@ -13,7 +13,7 @@ class PasswordForget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: const EdgeInsets.all(TSized.defaultSpace),
+        padding: const EdgeInsets.all(AppSizes.defaultSpace),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -23,14 +23,14 @@ class PasswordForget extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             SizedBox(
-              height: TSized.spaceBtwItems,
+              height: AppSizes.spaceBtwItems,
             ),
             Text(
               TTexts.forgetPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
             SizedBox(
-              height: TSized.spaceBtwSections * 2,
+              height: AppSizes.spaceBtwSections * 2,
             ),
             //text fields
             TextFormField(
@@ -40,13 +40,14 @@ class PasswordForget extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: TSized.spaceBtwSections,
+              height: AppSizes.spaceBtwSections,
             ),
             //submit button
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () =>Get.off(()=>PasswordReset()), child: const Text(TTexts.submit)))
+                    onPressed: () => Get.off(() => PasswordReset()),
+                    child: const Text(TTexts.submit)))
           ],
         ),
       ),

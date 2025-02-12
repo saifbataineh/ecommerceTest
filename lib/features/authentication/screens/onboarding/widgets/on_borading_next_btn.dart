@@ -14,13 +14,13 @@ class OnBoradingNextBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-        right: TSized.defaultSpace,
+        right: AppSizes.defaultSpace,
         bottom: TDeviceUtils.getBottomNavigationBarHeight(),
         child: ElevatedButton(
             onPressed: OnboradingController.instance.nextPage,
             style: ElevatedButton.styleFrom(
               shape: CircleBorder(),
-              backgroundColor: THelperFunction.isDarkMode(context)
+              backgroundColor: HelperFunction.isDarkMode(context)
                   ? TColors.primary
                   : TColors.black,
             ),

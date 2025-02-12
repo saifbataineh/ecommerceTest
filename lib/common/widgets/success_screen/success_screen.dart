@@ -9,7 +9,8 @@ class SuccessScreen extends StatelessWidget {
       {super.key,
       required this.image,
       required this.title,
-      required this.subTitle,required this.onPressed});
+      required this.subTitle,
+      required this.onPressed});
   final String image, title, subTitle;
   final VoidCallback onPressed;
 
@@ -26,10 +27,10 @@ class SuccessScreen extends StatelessWidget {
                 image: AssetImage(
                   image,
                 ),
-                width: THelperFunction.screenWidth() * 0.6,
+                width: HelperFunction.screenWidth() * 0.6,
               ),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
 
               //title & subtitle
@@ -39,7 +40,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwItems,
+                height: AppSizes.spaceBtwItems,
               ),
 
               Text(
@@ -48,15 +49,14 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
 
               //buttons
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed:onPressed ,
-                    child: Text(TTexts.continues)),
+                    onPressed: onPressed, child: Text(TTexts.continues)),
               ),
             ],
           ),

@@ -10,14 +10,12 @@ import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
-
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = THelperFunction.isDarkMode(context);
+    final bool isDark = HelperFunction.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -27,9 +25,12 @@ class LoginScreen extends StatelessWidget {
               ///Logo title &subtitle
               HeaderLoginScreen(isDark: isDark),
               LoginFormWidget(),
-              DividerWidget(isDark: isDark,dividerText: TTexts.orSignInWith.capitalize!,),
+              DividerWidget(
+                isDark: isDark,
+                dividerText: TTexts.orSignInWith.capitalize!,
+              ),
               const SizedBox(
-                height: TSized.spaceBtwSections,
+                height: AppSizes.spaceBtwSections,
               ),
               SocialWidget()
             ],
@@ -39,5 +40,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
-

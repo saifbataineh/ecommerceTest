@@ -3,7 +3,6 @@ import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
-
 class OnBoradingSkip extends StatelessWidget {
   const OnBoradingSkip({
     super.key,
@@ -13,10 +12,9 @@ class OnBoradingSkip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       top: TDeviceUtils.getAppBarHeight(),
-      right: TSized.defaultSpace,
+      right: AppSizes.defaultSpace,
       child: TextButton(
-        onPressed: OnboradingController.instance.skipPage
-        ,
+        onPressed: OnboradingController.instance.skipPage,
         child: const Text(
           "Skip",
         ),

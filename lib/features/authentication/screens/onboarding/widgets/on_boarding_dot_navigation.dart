@@ -13,13 +13,13 @@ class OnBoardingDotNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller=OnboradingController.instance;
+    final controller = OnboradingController.instance;
     return Positioned(
       bottom: TDeviceUtils.getBottomNavigationBarHeight() + 25,
-      left: TSized.defaultSpace,
+      left: AppSizes.defaultSpace,
       child: SmoothPageIndicator(
         effect: ExpandingDotsEffect(
-            activeDotColor: THelperFunction.isDarkMode(context)
+            activeDotColor: HelperFunction.isDarkMode(context)
                 ? TColors.light
                 : TColors.dark,
             dotHeight: 6),
