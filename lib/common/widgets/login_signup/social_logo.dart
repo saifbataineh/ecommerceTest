@@ -19,7 +19,7 @@ class SocialWidget extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               border: Border.all(
-                color: TColors.grey,
+                color: AppColors.grey,
               ),
               borderRadius: BorderRadius.circular(100)),
           child: IconButton(
@@ -27,12 +27,12 @@ class SocialWidget extends StatelessWidget {
               icon: const Image(
                   width: AppSizes.iconMd,
                   height: AppSizes.iconMd,
-                  image: AssetImage(TImages.google))),
+                  image: AssetImage(AppImages.google))),
         ),
         Container(
           decoration: BoxDecoration(
               border: Border.all(
-                color: TColors.grey,
+                color: AppColors.grey,
               ),
               borderRadius: BorderRadius.circular(100)),
           child: IconButton(
@@ -40,7 +40,7 @@ class SocialWidget extends StatelessWidget {
             icon: const Image(
               width: AppSizes.iconMd,
               height: AppSizes.iconMd,
-              image: AssetImage(TImages.facebook),
+              image: AssetImage(AppImages.facebook),
             ),
           ),
         ),

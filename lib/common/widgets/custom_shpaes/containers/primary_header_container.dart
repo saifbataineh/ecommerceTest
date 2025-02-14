@@ -13,7 +13,7 @@ class PrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return CurvedEdgesWidget(
       child: Container(
-        color: TColors.primary,
+        color: AppColors.primary,
         padding: EdgeInsets.zero,
         height: 400,
         child: Stack(
@@ -22,14 +22,14 @@ class PrimaryHeaderContainer extends StatelessWidget {
               top: -150,
               right: -250,
               child: CircularContainer(
-                backgroundColor: TColors.textWhite.withValues(alpha: 0.1),
+                backgroundColor: AppColors.textWhite.withValues(alpha: 0.1),
               ),
             ),
             Positioned(
               top: 100,
               right: -300,
               child: CircularContainer(
-                backgroundColor:TColors.textWhite.withValues(alpha: 0.1),
+                backgroundColor: AppColors.textWhite.withValues(alpha: 0.1),
               ),
             ),
             child

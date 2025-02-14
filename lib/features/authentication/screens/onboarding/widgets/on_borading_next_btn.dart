@@ -20,9 +20,9 @@ class OnBoradingNextBtn extends StatelessWidget {
             onPressed: OnboradingController.instance.nextPage,
             style: ElevatedButton.styleFrom(
               shape: CircleBorder(),
-              backgroundColor: HelperFunction.isDarkMode(context)
-                  ? TColors.primary
-                  : TColors.black,
+              backgroundColor: HelperFunctions.isDarkMode(context)
+                  ? AppColors.primary
+                  : AppColors.black,
             ),
             child: Icon(
               Iconsax.arrow_right_3,

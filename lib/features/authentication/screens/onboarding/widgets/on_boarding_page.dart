@@ -19,8 +19,8 @@ class OnBoradingPage extends StatelessWidget {
         children: [
           Image(
             image: AssetImage(image),
-            width: HelperFunction.screenWidth() * 0.8,
-            height: HelperFunction.screenHeight() * 0.6,
+            width: HelperFunctions.screenWidth() * 0.8,
+            height: HelperFunctions.screenHeight() * 0.6,
           ),
           Text(
             title,

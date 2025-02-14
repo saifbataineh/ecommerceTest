@@ -34,9 +34,9 @@ class TermsAndConditionsCheckBox extends StatelessWidget {
                 TextSpan(
                     text: '${TTexts.privacyPolicy} ',
                     style: Theme.of(context).textTheme.bodyMedium!.apply(
-                        color: isDark ? TColors.white : TColors.primary,
+                        color: isDark ? AppColors.white : AppColors.primary,
                         decorationColor:
-                            isDark ? TColors.white : TColors.primary,
+                            isDark ? AppColors.white : AppColors.primary,
                         decoration: TextDecoration.underline)),
                 TextSpan(
                     text: ' ${TTexts.and} ',
@@ -44,9 +44,9 @@ class TermsAndConditionsCheckBox extends StatelessWidget {
                 TextSpan(
                     text: TTexts.termsOfUse,
                     style: Theme.of(context).textTheme.bodyMedium!.apply(
-                        color: isDark ? TColors.white : TColors.primary,
+                        color: isDark ? AppColors.white : AppColors.primary,
                         decorationColor:
-                            isDark ? TColors.white : TColors.primary,
+                            isDark ? AppColors.white : AppColors.primary,
                         decoration: TextDecoration.underline)),
               ],
             ),

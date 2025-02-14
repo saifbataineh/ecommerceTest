@@ -3,7 +3,6 @@ import 'package:ecommerce/common/widgets/custom_shpaes/containers/circular_conta
 import 'package:ecommerce/common/widgets/images/rounded_image.dart';
 import 'package:ecommerce/features/shop/controllers/home_controller.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
-import 'package:ecommerce/utils/constants/images_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -40,8 +39,8 @@ class HomeSlider extends StatelessWidget {
                   width: 20,
                   height: 4,
                   backgroundColor: controller.carouselCurrentIndex.value == i
-                      ? TColors.primary
-                      : TColors.grey,
+                      ? AppColors.primary
+                      : AppColors.grey,
                   margin: EdgeInsets.only(right: 10),
                 ),
             ],

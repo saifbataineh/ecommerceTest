@@ -1,4 +1,6 @@
 import 'package:ecommerce/features/shop/screens/home/home_screen.dart';
+import 'package:ecommerce/features/shop/screens/store/store.dart';
+import 'package:ecommerce/features/shop/screens/wishlist/wishlist.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 
@@ -13,7 +15,7 @@ class NavigationMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(NavigationController());
-    final isDark = HelperFunction.isDarkMode(context);
+    final isDark = HelperFunctions.isDarkMode(context);
     return Scaffold(
       bottomNavigationBar: Obx(
         () => NavigationBar(
@@ -30,10 +32,10 @@ class NavigationMenu extends StatelessWidget {
                   icon: Icon(Iconsax.heart), label: "Wishlist"),
               NavigationDestination(icon: Icon(Iconsax.user), label: "Profile"),
             ],
-            backgroundColor: isDark ? TColors.black : TColors.white,
+            backgroundColor: isDark ? AppColors.black : AppColors.white,
             indicatorColor: isDark
-                ? TColors.white.withValues(alpha: 0.1)
-                : TColors.black.withValues(alpha: 0.1)),
+                ? AppColors.white.withValues(alpha: 0.1)
+                : AppColors.black.withValues(alpha: 0.1)),
       ),
       body: Obx(() => controller.screens[controller.selectedIndex.value]),
     );
@@ -44,12 +46,8 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final screens = [
     HomeScreen(),
-    Container(
-      color: Colors.red,
-    ),
-    Container(
-      color: Colors.black,
-    ),
+    StoreScreen(),
+    Wishlist(),
     Container(
       color: Colors.purple,
     )

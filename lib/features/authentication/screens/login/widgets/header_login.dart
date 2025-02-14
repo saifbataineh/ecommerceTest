@@ -17,7 +17,8 @@ class HeaderLoginScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image(
-          image: AssetImage(isDark ? TImages.lighAppLogo : TImages.darkAppLogo),
+          image: AssetImage(
+              isDark ? AppImages.lighAppLogo : AppImages.darkAppLogo),
           height: 150,
         ),
         Text(

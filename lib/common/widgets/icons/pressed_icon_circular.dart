@@ -1,12 +1,11 @@
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class PressedCircularIcon extends StatelessWidget {
   const PressedCircularIcon({
     super.key,
-    required this.isDark,
     this.width,
     this.height,
     this.size = AppSizes.lg,
@@ -19,10 +18,10 @@ class PressedCircularIcon extends StatelessWidget {
   final double? width, height, size;
   final Color? backgroundColor, color;
   final VoidCallback? onPressed;
-  final bool isDark;
 
   @override
   Widget build(BuildContext context) {
+    final isDark = HelperFunctions.isDarkMode(context);
     return Container(
       width: width,
       height: height,
@@ -30,8 +29,8 @@ class PressedCircularIcon extends StatelessWidget {
         color: backgroundColor != null
             ? backgroundColor!
             : isDark
-                ? TColors.black.withValues(alpha: 0.1)
-                : TColors.white.withValues(alpha: 0.1),
+                ? AppColors.black.withValues(alpha: 0.1)
+                : AppColors.white.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(100),
       ),
       child: IconButton(

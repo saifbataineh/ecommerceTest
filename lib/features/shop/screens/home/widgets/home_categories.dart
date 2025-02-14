@@ -17,7 +17,7 @@ class HomeCategoriesHorizontal extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) {
             return HorizontalImageText(
-              image: TImages.shoeIcon,
+              image: AppImages.shoeIcon,
               title: 'Shoes',
               onTap: () {},
               textColor: Colors.black,

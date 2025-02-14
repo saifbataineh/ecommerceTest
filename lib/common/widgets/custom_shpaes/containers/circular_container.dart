@@ -12,8 +12,8 @@ class CircularContainer extends StatelessWidget {
     this.margin,
     this.radius = AppSizes.cardRadiusLg,
     this.showBorder = false,
-    this.backgroundColor = TColors.white,
-    this.borderColor = TColors.borderPrimary,
+    this.backgroundColor = AppColors.white,
+    this.borderColor = AppColors.borderPrimary,
   });
   final double? width, height;
   final double radius;
@@ -34,7 +34,7 @@ class CircularContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(radius),
-        border: showBorder?Border.all(color: borderColor):null,
+        border: showBorder ? Border.all(color: borderColor) : null,
       ),
       child: child,
     );

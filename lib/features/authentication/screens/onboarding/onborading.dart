@@ -10,11 +10,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class OnboradingScreen extends StatelessWidget {
-   const OnboradingScreen({super.key});
+  const OnboradingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-  final controller=Get.put(OnboradingController());
+    final controller = Get.put(OnboradingController());
     return Scaffold(
       body: Stack(
         children: [
@@ -24,17 +24,17 @@ class OnboradingScreen extends StatelessWidget {
             onPageChanged: controller.updatePageIndicator,
             children: [
               OnBoradingPage(
-                image: TImages.onBoradingScreen1,
+                image: AppImages.onBoradingScreen1,
                 title: TTexts.onBoardingTitle1,
                 subTitle: TTexts.onBoardingSubTitle1,
               ),
               OnBoradingPage(
-                image: TImages.onBoradingScreen2,
+                image: AppImages.onBoradingScreen2,
                 title: TTexts.onBoardingTitle2,
                 subTitle: TTexts.onBoardingSubTitle2,
               ),
               OnBoradingPage(
-                image: TImages.onBoradingScreen3,
+                image: AppImages.onBoradingScreen3,
                 title: TTexts.onBoardingTitle3,
                 subTitle: TTexts.onBoardingSubTitle3,
               ),

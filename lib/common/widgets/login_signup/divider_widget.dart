@@ -2,13 +2,12 @@ import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class DividerWidget extends StatelessWidget {
-
   const DividerWidget({
     super.key,
     required this.dividerText,
     required this.isDark,
   });
-final String dividerText;
+  final String dividerText;
   final bool isDark;
 
   @override
@@ -18,7 +17,7 @@ final String dividerText;
       children: [
         Flexible(
           child: Divider(
-            color: isDark ? TColors.darkGrey : TColors.grey,
+            color: isDark ? AppColors.darkGrey : AppColors.grey,
             thickness: 0.5,
             indent: 60,
             endIndent: 5,
@@ -27,7 +26,7 @@ final String dividerText;
         Text(dividerText),
         Flexible(
           child: Divider(
-            color: isDark ? TColors.darkGrey : TColors.grey,
+            color: isDark ? AppColors.darkGrey : AppColors.grey,
             thickness: 0.5,
             indent: 5,
             endIndent: 60,
@@ -37,4 +36,3 @@ final String dividerText;
     );
   }
 }
-

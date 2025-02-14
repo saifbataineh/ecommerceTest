@@ -1,4 +1,3 @@
-import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,7 @@ class HorizontalImageText extends StatelessWidget {
     this.backgroundColor,
     required this.image,
     required this.title,
-    this.textColor = TColors.white,
+    this.textColor = AppColors.white,
   });
 
   final void Function()? onTap;
@@ -36,18 +35,18 @@ class HorizontalImageText extends StatelessWidget {
               padding: EdgeInsets.all(AppSizes.sm),
               decoration: BoxDecoration(
                 color: backgroundColor ??
-                    (HelperFunction.isDarkMode(context)
-                        ? TColors.black
-                        : TColors.white),
+                    (HelperFunctions.isDarkMode(context)
+                        ? AppColors.black
+                        : AppColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
                 child: Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: (HelperFunction.isDarkMode(context)
-                      ? TColors.light
-                      : TColors.dark),
+                  color: (HelperFunctions.isDarkMode(context)
+                      ? AppColors.light
+                      : AppColors.dark),
                 ),
               ),
             ),

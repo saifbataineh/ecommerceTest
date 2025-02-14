@@ -21,18 +21,18 @@ class HomeAppBar extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .labelMedium!
-                .apply(color: TColors.grey),
+                .apply(color: AppColors.grey),
           ),
           Text(
             TTexts.homeAppbarSubTitle,
             style: Theme.of(context)
                 .textTheme
                 .headlineSmall!
-                .apply(color: TColors.white),
+                .apply(color: AppColors.white),
           ),
         ],
       ),
-      actions: [CountCounterIcon(onPressed: () {}, iconColor: TColors.white)],
+      actions: [CountCounterIcon(onPressed: () {}, iconColor: AppColors.white)],
     );
   }
 }

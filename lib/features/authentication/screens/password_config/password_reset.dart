@@ -27,9 +27,9 @@ class PasswordReset extends StatelessWidget {
               //image
               Image(
                 image: AssetImage(
-                  TImages.deleiveredEmailIllustartion,
+                  AppImages.deleiveredEmailIllustartion,
                 ),
-                width: HelperFunction.screenWidth() * 0.6,
+                width: HelperFunctions.screenWidth() * 0.6,
               ),
               SizedBox(
                 height: AppSizes.spaceBtwSections,

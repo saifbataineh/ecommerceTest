@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                         SectionHeading(
                           title: 'popular Categories',
                           showActionButton: false,
-                          textColor: TColors.white,
+                          textColor: AppColors.white,
                         ),
                         SizedBox(
                           height: AppSizes.spaceBtwItems,
@@ -60,11 +60,18 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(AppSizes.defaultSpace),
               child: HomeSlider(
                 banners: [
-                  TImages.banner1,
-                  TImages.banner2,
-                  TImages.banner3,
+                  AppImages.banner1,
+                  AppImages.banner2,
+                  AppImages.banner3,
                 ],
               ),
+            ),
+            SizedBox(
+              height: AppSizes.spaceBtwItems,
+            ),
+            SectionHeading(
+              title: ' Popular Products',
+              onPressed: () {},
             ),
             SizedBox(
               height: AppSizes.spaceBtwItems,
