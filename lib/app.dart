@@ -14,7 +14,7 @@ class App extends StatelessWidget {
       title: 'ecommerce',
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      home: OnboradingScreen(),
+      home: const OnboradingScreen(),
     );
   }
 }

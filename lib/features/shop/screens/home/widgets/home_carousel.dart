@@ -41,7 +41,7 @@ class HomeSlider extends StatelessWidget {
                   backgroundColor: controller.carouselCurrentIndex.value == i
                       ? AppColors.primary
                       : AppColors.grey,
-                  margin: EdgeInsets.only(right: 10),
+                  margin: const EdgeInsets.only(right: 10),
                 ),
             ],
           ),

@@ -22,31 +22,31 @@ class PasswordForget extends StatelessWidget {
               TTexts.forgetPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            SizedBox(
+            const SizedBox(
               height: AppSizes.spaceBtwItems,
             ),
             Text(
               TTexts.forgetPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
-            SizedBox(
+            const SizedBox(
               height: AppSizes.spaceBtwSections * 2,
             ),
             //text fields
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: TTexts.email,
                 prefixIcon: Icon(Iconsax.direct_right),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: AppSizes.spaceBtwSections,
             ),
             //submit button
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () => Get.off(() => PasswordReset()),
+                    onPressed: () => Get.off(() => const PasswordReset()),
                     child: const Text(TTexts.submit)))
           ],
         ),

@@ -38,7 +38,7 @@ class PressedCircularIcon extends StatelessWidget {
           onPressed: onPressed,
           icon: Icon(
             icon,
-            color: color,
+            color: color ,
             size: size,
           )),
     );

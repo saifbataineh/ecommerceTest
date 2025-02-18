@@ -23,7 +23,7 @@ class StoreScreen extends StatelessWidget {
         child: Scaffold(
           appBar: CustomAppBar(
             title: Text(
-              "store",
+              'store',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             actions: [
@@ -44,38 +44,38 @@ class StoreScreen extends StatelessWidget {
                         : AppColors.white,
                     expandedHeight: 440,
                     flexibleSpace: Padding(
-                      padding: EdgeInsets.all(AppSizes.defaultSpace),
+                      padding: const EdgeInsets.all(AppSizes.defaultSpace),
                       child: ListView(
-                        physics: NeverScrollableScrollPhysics(),
+                        physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         children: [
                           //search bar
-                          SizedBox(
+                          const SizedBox(
                             height: AppSizes.spaceBtwItems,
                           ),
-                          CustomSearchBar(
+                          const CustomSearchBar(
                             padding: EdgeInsets.zero,
                             showBackground: false,
                             text: 'Search in store',
                             showBorder: true,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: AppSizes.spaceBtwSections,
                           ),
                           //featured brands
                           SectionHeading(
-                            title: "Featured brands",
+                            title: 'Featured brands',
                             showActionButton: true,
                             onPressed: () {},
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: AppSizes.spaceBtwItems / 1.5,
                           ),
                           GridViewCustomProducts(
                               mainAxisExtent: 80,
                               itemCount: 4,
                               itemBuilder: (_, index) {
-                                return BrandCard(
+                                return const BrandCard(
                                   showBorder: true,
                                 );
                               })
@@ -83,26 +83,26 @@ class StoreScreen extends StatelessWidget {
                       ),
                     ),
                     //tabs
-                    bottom: CustomTabBar(tabs: [
+                    bottom: const CustomTabBar(tabs: [
                       Tab(
-                        child: Text("Sports"),
+                        child: Text('Sports'),
                       ),
                       Tab(
-                        child: Text("Furniture"),
+                        child: Text('Furniture'),
                       ),
                       Tab(
-                        child: Text("Electronics"),
+                        child: Text('Electronics'),
                       ),
                       Tab(
-                        child: Text("Clothes"),
+                        child: Text('Clothes'),
                       ),
                       Tab(
-                        child: Text("Cosmetics"),
+                        child: Text('Cosmetics'),
                       ),
                     ])),
               ];
             },
-            body: TabBarView(children: [
+            body: const TabBarView(children: [
               CategoryTab(),
               CategoryTab(),
               CategoryTab(),
@@ -123,14 +123,14 @@ class CategoryTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       children: [
         Padding(
-          padding: EdgeInsets.all(AppSizes.defaultSpace),
+          padding: const EdgeInsets.all(AppSizes.defaultSpace),
           child: Column(
             children: [
               //brands
-              BrandsShowCase(
+              const BrandsShowCase(
                 images: [
                   AppImages.product3,
                   AppImages.product2,
@@ -139,16 +139,16 @@ class CategoryTab extends StatelessWidget {
               ),
               // products
               SectionHeading(
-                title: " you might like",
+                title: ' you might like',
                 onPressed: () {},
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwItems,
               ),
               GridViewCustomProducts(
                   itemCount: 4,
-                  itemBuilder: (_, index) => ProductCardVertical()),
-              SizedBox(
+                  itemBuilder: (_, index) => const ProductCardVertical()),
+              const SizedBox(
                 height: AppSizes.spaceBtwSections,
               )
             ],

@@ -31,7 +31,7 @@ class CountCounterIcon extends StatelessWidget {
                 borderRadius: BorderRadius.circular(100)),
             child: Center(
               child: Text(
-                "2",
+                '2',
                 style: Theme.of(context)
                     .textTheme
                     .labelLarge!

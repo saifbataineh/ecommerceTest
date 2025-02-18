@@ -22,18 +22,18 @@ class LoginFormWidget extends StatelessWidget {
           spacing: AppSizes.defaultSpace,
           children: [
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.direct_right),
                   labelText: TTexts.email),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 labelText: TTexts.password,
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: AppSizes.defaultSpace,
             ),
             Row(
@@ -48,20 +48,20 @@ class LoginFormWidget extends StatelessWidget {
                 ),
                 //forgetPassword
                 TextButton(
-                    onPressed: () => Get.to(() => PasswordForget()),
-                    child: Text(TTexts.forgetPassword))
+                    onPressed: () => Get.to(() => const PasswordForget()),
+                    child: const Text(TTexts.forgetPassword))
               ],
             ),
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () => Get.to(() => NavigationMenu()),
-                    child: Text(TTexts.signIn))),
+                    onPressed: () => Get.to(() => const NavigationMenu()),
+                    child: const Text(TTexts.signIn))),
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () => Get.to(() => SignUpScreen()),
-                child: Text(TTexts.createAccount),
+                onPressed: () => Get.to(() => const SignUpScreen()),
+                child: const Text(TTexts.createAccount),
               ),
             ),
           ],

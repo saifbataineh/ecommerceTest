@@ -22,13 +22,13 @@ class Wishlist extends StatelessWidget {
         actions: [
           PressedCircularIcon(
             icon: Iconsax.add,
-            onPressed: () => Get.to(HomeScreen()),
+            onPressed: () => Get.to(const HomeScreen()),
           )
         ],
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(
+          padding: const EdgeInsets.all(
             AppSizes.defaultSpace,
           
           ),

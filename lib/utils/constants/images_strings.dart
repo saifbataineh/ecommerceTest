@@ -16,44 +16,47 @@ class AppImages {
       'assets/images/on_borading_gifs/delivery_guy.gif';
   //-- gifs animation
   static const String productsIllustartion =
-      "assets/images/gifs/workout_guy.gif";
+      'assets/images/gifs/workout_guy.gif';
   static const String productsSaleIllustration =
-      "assets/images/gifs/sale_guy.gif";
+      'assets/images/gifs/sale_guy.gif';
   static const String staticSuccessIllustartion =
-      "assets/images/gifs/success_guy.gif";
+      'assets/images/gifs/success_guy.gif';
   static const String deleiveredOnPlaneIllustartion =
-      "assets/images/gifs/come_back_guy.gif";
+      'assets/images/gifs/come_back_guy.gif';
   static const String deleiveredEmailIllustartion =
-      "assets/images/gifs/receive_a_package_guy.gif";
+      'assets/images/gifs/receive_a_package_guy.gif';
   static const String verifyIllustartion =
-      "assets/images/gifs/travel_packback_guy.gif";
+      'assets/images/gifs/travel_packback_guy.gif';
   //categories --icons
-  static const String sportIcon = "assets/icons/categories/bowling_icon.png";
+  static const String user = 'assets/images/user/user.webp';
+  //profile
+
+  static const String sportIcon = 'assets/icons/categories/bowling_icon.png';
   static const String clothIcon =
-      "assets/icons/categories/tailors_dummy_icon.png";
-  static const String shoeIcon = "assets/icons/categories/shoes_icon.png";
+      'assets/icons/categories/tailors_dummy_icon.png';
+  static const String shoeIcon = 'assets/icons/categories/shoes_icon.png';
   static const String cosmeticsIcon =
-      "assets/icons/categories/cosmetics_icon.png";
-  static const String animalIcon = "assets/icons/categories/dog_heart_icon.png";
-  static const String toyIcon = "assets/icons/categories/_icon.png";
+      'assets/icons/categories/cosmetics_icon.png';
+  static const String animalIcon = 'assets/icons/categories/dog_heart_icon.png';
+  static const String toyIcon = 'assets/icons/categories/_icon.png';
   static const String furnitureIcon =
-      "assets/icons/categories/wooden_toy_icon.png";
+      'assets/icons/categories/wooden_toy_icon.png';
   static const String jewelearyIcon =
-      "assets/icons/categories/spakling_diamond_icon.png";
+      'assets/icons/categories/spakling_diamond_icon.png';
   static const String electornicsIcon =
-      "assets/icons/categories/smartphone_icon.png";
+      'assets/icons/categories/smartphone_icon.png';
   //banners --images
-  static const String banner1 = "assets/images/banners/promo_banner1.jpg";
-  static const String banner2 = "assets/images/banners/promo_banner2.jpg";
-  static const String banner3 = "assets/images/banners/promo_banner3.jpg";
+  static const String banner1 = 'assets/images/banners/promo_banner1.jpg';
+  static const String banner2 = 'assets/images/banners/promo_banner2.jpg';
+  static const String banner3 = 'assets/images/banners/promo_banner3.jpg';
 
   //products
-  static const String product1 = "assets/images/products/handwatch.png";
-  static const String product2 = "assets/images/products/headset.png";
-  static const String product3 = "assets/images/products/lipstick.png";
-  static const String product4 = "assets/images/products/minicar.png";
-  static const String product5 = "assets/images/products/plant.png";
-  static const String product6 = "assets/images/products/shoe.png";
-  static const String product7 = "assets/images/products/smartwatch.png";
-  static const String product8 = "assets/images/products/sunglassess.png";
+  static const String product1 = 'assets/images/products/handwatch.png';
+  static const String product2 = 'assets/images/products/headset.png';
+  static const String product3 = 'assets/images/products/lipstick.png';
+  static const String product4 = 'assets/images/products/minicar.png';
+  static const String product5 = 'assets/images/products/plant.png';
+  static const String product6 = 'assets/images/products/shoe.png';
+  static const String product7 = 'assets/images/products/smartwatch.png';
+  static const String product8 = 'assets/images/products/sunglassess.png';
 }

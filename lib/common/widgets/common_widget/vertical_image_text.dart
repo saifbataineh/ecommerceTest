@@ -32,7 +32,7 @@ class HorizontalImageText extends StatelessWidget {
             Container(
               width: 56,
               height: 56,
-              padding: EdgeInsets.all(AppSizes.sm),
+              padding: const EdgeInsets.all(AppSizes.sm),
               decoration: BoxDecoration(
                 color: backgroundColor ??
                     (HelperFunctions.isDarkMode(context)
@@ -50,7 +50,7 @@ class HorizontalImageText extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: AppSizes.spaceBtwItems / 2),
+            const SizedBox(height: AppSizes.spaceBtwItems / 2),
             SizedBox(
               width: 55,
               child: Text(

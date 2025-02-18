@@ -19,7 +19,7 @@ class TermsAndConditionsCheckBox extends StatelessWidget {
             width: 24,
             height: 24,
             child: Checkbox(value: true, onChanged: (value) {})),
-        SizedBox(
+        const SizedBox(
           width: AppSizes.spaceBtwItems,
         ),
         Flexible(

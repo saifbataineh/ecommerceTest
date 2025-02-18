@@ -44,6 +44,7 @@ dependencies:
   flutter_native_splash: ^2.4.4
   smooth_page_indicator: ^1.2.0+3
   carousel_slider: ^5.0.0
+  readmore: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +76,7 @@ flutter:
     - assets/icons/categories/
     - assets/images/
     - assets/images/gifs/
+    - assets/images/user/
     - assets/images/on_borading_gifs/
     - assets/images/banners/
     - assets/images/products/

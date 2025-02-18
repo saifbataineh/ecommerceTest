@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            PrimaryHeaderContainer(
+            const PrimaryHeaderContainer(
               child: Column(
                 children: [
                   HomeAppBar(),
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                     height: AppSizes.spaceBtwSections,
                   ),
                   CustomSearchBar(
-                    text: "search in Store ",
+                    text: 'search in Store ',
                   ),
                   SizedBox(
                     height: AppSizes.spaceBtwSections,
@@ -50,6 +50,9 @@ class HomeScreen extends StatelessWidget {
                         ),
                         //categories
                         HomeCategoriesHorizontal(),
+                        SizedBox(
+                          height: AppSizes.spaceBtwSections,
+                        ),
                       ],
                     ),
                   ),
@@ -66,18 +69,18 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: AppSizes.spaceBtwItems,
             ),
             SectionHeading(
               title: ' Popular Products',
               onPressed: () {},
             ),
-            SizedBox(
+            const SizedBox(
               height: AppSizes.spaceBtwItems,
             ),
             GridViewCustomProducts(
-              itemBuilder: (context, index) => ProductCardVertical(),
+              itemBuilder: (context, index) => const ProductCardVertical(),
               itemCount: 4,
             )
           ],

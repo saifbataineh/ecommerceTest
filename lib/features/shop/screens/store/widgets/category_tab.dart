@@ -8,7 +8,7 @@ class CategoryTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.all(AppSizes.defaultSpace),
       child: Column(
         children: [

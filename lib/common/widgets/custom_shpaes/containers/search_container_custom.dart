@@ -29,7 +29,7 @@ class CustomSearchBar extends StatelessWidget {
         padding: padding,
         child: Container(
           width: TDeviceUtils.getScreenWidth(),
-          padding: EdgeInsets.all(AppSizes.md),
+          padding: const EdgeInsets.all(AppSizes.md),
           decoration: BoxDecoration(
               color: showBackground
                   ? isDark
@@ -46,7 +46,7 @@ class CustomSearchBar extends StatelessWidget {
                 icon,
                 color: isDark ? AppColors.darkerGrey : AppColors.grey,
               ),
-              SizedBox(
+              const SizedBox(
                 width: AppSizes.spaceBtwItems,
               ),
               Text(

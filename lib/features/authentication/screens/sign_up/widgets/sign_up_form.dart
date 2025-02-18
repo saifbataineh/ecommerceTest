@@ -30,7 +30,7 @@ class SignUpForm extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: AppSizes.spaceBtwInputFields,
               ),
               Expanded(
@@ -44,7 +44,7 @@ class SignUpForm extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
@@ -54,7 +54,7 @@ class SignUpForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.user_edit),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
@@ -64,7 +64,7 @@ class SignUpForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.direct),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
@@ -74,7 +74,7 @@ class SignUpForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.call),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: AppSizes.spaceBtwInputFields,
           ),
           TextFormField(
@@ -92,7 +92,7 @@ class SignUpForm extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => Get.to(() => VerifyEmailScreen()),
+                onPressed: () => Get.to(() => const VerifyEmailScreen()),
                 child: const Text(TTexts.createAccount),
               ))
         ],

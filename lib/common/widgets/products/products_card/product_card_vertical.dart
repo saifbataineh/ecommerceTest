@@ -5,11 +5,13 @@ import 'package:ecommerce/common/widgets/images/rounded_image.dart';
 import 'package:ecommerce/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:ecommerce/common/widgets/texts/product_price_text.dart';
 import 'package:ecommerce/common/widgets/texts/prouct_title_text.dart';
+import 'package:ecommerce/features/shop/screens/product_screen/product_detail.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/images_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProductCardVertical extends StatelessWidget {
@@ -19,10 +21,10 @@ class ProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = HelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: ()=>Get.to(()=>const ProductDetail()),
       child: Container(
         width: 180,
-        padding: EdgeInsets.all(1),
+        padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [ShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(AppSizes.prouctImageRadius),
@@ -32,12 +34,12 @@ class ProductCardVertical extends StatelessWidget {
           children: [
             //thumbNail,wishList,button,discount tag
             CircularContainer(
-              padding: EdgeInsets.all(AppSizes.sm),
+              padding: const EdgeInsets.all(AppSizes.sm),
               backgroundColor: isDark ? AppColors.dark : AppColors.light,
               child: Stack(
                 children: [
                   //THUMBNAIL Image
-                  RoundedImage(
+                  const RoundedImage(
                     backgroundColor: Colors.transparent,
                     imageUrl: AppImages.product1,
                     applyImageRadius: true,
@@ -48,10 +50,10 @@ class ProductCardVertical extends StatelessWidget {
                       radius: AppSizes.sm,
                       backgroundColor:
                           AppColors.secondary.withValues(alpha: 0.8),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                           horizontal: AppSizes.sm, vertical: AppSizes.xs),
                       child: Text(
-                        "25%",
+                        '25%',
                         style: Theme.of(context)
                             .textTheme
                             .labelLarge!
@@ -60,7 +62,7 @@ class ProductCardVertical extends StatelessWidget {
                     ),
                   ),
                   //favorite IconButton
-                  Positioned(
+                  const Positioned(
                     top: 0,
                     right: 0,
                     child: PressedCircularIcon(
@@ -71,18 +73,18 @@ class ProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: AppSizes.spaceBtwSections / 2,
             )
             //details
             ,
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: AppSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ProductTitleText(
-                    title: "white watch small size",
+                    title: 'white watch small size',
                     smallSize: true,
                   ),
                   SizedBox(
@@ -94,18 +96,18 @@ class ProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: AppSizes.sm),
+                const Padding(
+                  padding: EdgeInsets.only(left: AppSizes.sm),
                   child: ProductPriceText(
                     price: '35.5',
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: AppColors.dark,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(

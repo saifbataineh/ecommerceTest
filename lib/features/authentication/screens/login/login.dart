@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
             children: [
               ///Logo title &subtitle
               HeaderLoginScreen(isDark: isDark),
-              LoginFormWidget(),
+              const LoginFormWidget(),
               DividerWidget(
                 isDark: isDark,
                 dividerText: TTexts.orSignInWith.capitalize!,
@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(
                 height: AppSizes.spaceBtwSections,
               ),
-              SocialWidget()
+              const SocialWidget()
             ],
           ),
         ),

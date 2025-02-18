@@ -16,22 +16,22 @@ class PasswordReset extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-              onPressed: () => Get.back(), icon: Icon(CupertinoIcons.clear))
+              onPressed: () => Get.back(), icon: const Icon(CupertinoIcons.clear))
         ],
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(AppSizes.defaultSpace),
+          padding: const EdgeInsets.all(AppSizes.defaultSpace),
           child: Column(
             children: [
               //image
               Image(
-                image: AssetImage(
+                image: const AssetImage(
                   AppImages.deleiveredEmailIllustartion,
                 ),
                 width: HelperFunctions.screenWidth() * 0.6,
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwSections,
               ),
 
@@ -41,7 +41,7 @@ class PasswordReset extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwItems,
               ),
 
@@ -50,7 +50,7 @@ class PasswordReset extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwSections,
               ),
 
@@ -58,15 +58,15 @@ class PasswordReset extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child:
-                    ElevatedButton(onPressed: () {}, child: Text(TTexts.done)),
+                    ElevatedButton(onPressed: () {}, child: const Text(TTexts.done)),
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwItems,
               ),
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                    onPressed: () {}, child: Text(TTexts.resendEmail)),
+                    onPressed: () {}, child: const Text(TTexts.resendEmail)),
               ),
             ],
           ),

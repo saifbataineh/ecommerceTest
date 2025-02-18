@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/personalization/screens/settings/settings_screen.dart';
 import 'package:ecommerce/features/shop/screens/home/home_screen.dart';
 import 'package:ecommerce/features/shop/screens/store/store.dart';
 import 'package:ecommerce/features/shop/screens/wishlist/wishlist.dart';
@@ -26,11 +27,11 @@ class NavigationMenu extends StatelessWidget {
               controller.selectedIndex.value = index;
             },
             destinations: [
-              NavigationDestination(icon: Icon(Iconsax.home), label: "Home"),
-              NavigationDestination(icon: Icon(Iconsax.shop), label: "Store"),
-              NavigationDestination(
-                  icon: Icon(Iconsax.heart), label: "Wishlist"),
-              NavigationDestination(icon: Icon(Iconsax.user), label: "Profile"),
+              const NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
+              const NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
+              const NavigationDestination(
+                  icon: Icon(Iconsax.heart), label: 'Wishlist'),
+              const NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
             ],
             backgroundColor: isDark ? AppColors.black : AppColors.white,
             indicatorColor: isDark
@@ -45,11 +46,9 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final screens = [
-    HomeScreen(),
-    StoreScreen(),
-    Wishlist(),
-    Container(
-      color: Colors.purple,
-    )
+    const HomeScreen(),
+    const StoreScreen(),
+    const Wishlist(),
+    const SettingsScreen()
   ];
 }

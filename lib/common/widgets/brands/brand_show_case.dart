@@ -19,10 +19,10 @@ class BrandsShowCase extends StatelessWidget {
       showBorder: true,
       borderColor: AppColors.darkGrey,
       backgroundColor: Colors.transparent,
-      margin: EdgeInsets.only(bottom: AppSizes.spaceBtwItems),
+      margin: const EdgeInsets.only(bottom: AppSizes.spaceBtwItems),
       child: Column(
         children: [
-          BrandCard(
+          const BrandCard(
             showBorder: false,
           ),
           const SizedBox(
@@ -45,7 +45,7 @@ class BrandsShowCase extends StatelessWidget {
             ? AppColors.darkerGrey
             : AppColors.light,
         margin: const EdgeInsets.only(right: AppSizes.sm),
-        padding: EdgeInsets.all(AppSizes.md),
+        padding: const EdgeInsets.all(AppSizes.md),
         child: Image(
           fit: BoxFit.contain,
           image: AssetImage(image),

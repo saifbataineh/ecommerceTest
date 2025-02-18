@@ -29,7 +29,7 @@ class SuccessScreen extends StatelessWidget {
                 ),
                 width: HelperFunctions.screenWidth() * 0.6,
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwSections,
               ),
 
@@ -39,7 +39,7 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwItems,
               ),
 
@@ -48,7 +48,7 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSizes.spaceBtwSections,
               ),
 
@@ -56,7 +56,7 @@ class SuccessScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: onPressed, child: Text(TTexts.continues)),
+                    onPressed: onPressed, child: const Text(TTexts.continues)),
               ),
             ],
           ),
