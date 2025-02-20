@@ -1,4 +1,5 @@
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:ecommerce/features/shop/screens/product_review/product_review_screen.dart';
 import 'package:ecommerce/features/shop/screens/product_screen/widgets/bottom_add_to_cart.dart';
 import 'package:ecommerce/features/shop/screens/product_screen/widgets/product_image_slider.dart';
 import 'package:ecommerce/features/shop/screens/product_screen/widgets/product_meta_data.dart';
@@ -6,6 +7,7 @@ import 'package:ecommerce/features/shop/screens/product_screen/widgets/products_
 import 'package:ecommerce/features/shop/screens/product_screen/widgets/rating_and_share.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -15,8 +17,7 @@ class ProductDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: 
-      BottomAddToCart(),
+      bottomNavigationBar: const BottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -85,7 +86,8 @@ class ProductDetail extends StatelessWidget {
                         showActionButton: false,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () =>
+                            Get.to(() => const ProductReviewScreen(),),
                         icon: const Icon(
                           Iconsax.arrow_right_3,
                           size: 18,
