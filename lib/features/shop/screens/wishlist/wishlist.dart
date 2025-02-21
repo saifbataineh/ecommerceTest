@@ -27,15 +27,13 @@ class Wishlist extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Padding(
           padding: const EdgeInsets.all(
             AppSizes.defaultSpace,
           
           ),
-child: Column(children: [
-  GridViewCustomProducts(itemCount: 4, itemBuilder: (_,index)=>const ProductCardVertical())
-],),
-        ),
+        child: Column(children: [
+          GridViewCustomProducts(itemCount: 4, itemBuilder: (_,index)=>const ProductCardVertical())
+        ],),
          
       ),
     );

@@ -18,48 +18,46 @@ class SuccessScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Padding(
           padding: TSpacingStyle.paddingWithAppBarHeight * 2,
-          child: Column(
-            children: [
-              //image
-              Image(
-                image: AssetImage(
-                  image,
-                ),
-                width: HelperFunctions.screenWidth() * 0.6,
+        child: Column(
+          children: [
+            //image
+            Image(
+              image: AssetImage(
+                image,
               ),
-              const SizedBox(
-                height: AppSizes.spaceBtwSections,
-              ),
-
-              //title & subtitle
-              Text(
-                title,
-                style: Theme.of(context).textTheme.headlineMedium,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(
-                height: AppSizes.spaceBtwItems,
-              ),
-
-              Text(
-                subTitle,
-                style: Theme.of(context).textTheme.labelMedium,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(
-                height: AppSizes.spaceBtwSections,
-              ),
-
-              //buttons
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                    onPressed: onPressed, child: const Text(TTexts.continues)),
-              ),
-            ],
-          ),
+              width: HelperFunctions.screenWidth() * 0.6,
+            ),
+            const SizedBox(
+              height: AppSizes.spaceBtwSections,
+            ),
+        
+            //title & subtitle
+            Text(
+              title,
+              style: Theme.of(context).textTheme.headlineMedium,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(
+              height: AppSizes.spaceBtwItems,
+            ),
+        
+            Text(
+              subTitle,
+              style: Theme.of(context).textTheme.labelMedium,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(
+              height: AppSizes.spaceBtwSections,
+            ),
+        
+            //buttons
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                  onPressed: onPressed, child: const Text(TTexts.continues)),
+            ),
+          ],
         ),
       ),
     );

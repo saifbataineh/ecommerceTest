@@ -18,23 +18,21 @@ class LoginScreen extends StatelessWidget {
     final bool isDark = HelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
-        child: Padding(
-          padding: TSpacingStyle.paddingWithAppBarHeight,
-          child: Column(
-            children: [
-              ///Logo title &subtitle
-              HeaderLoginScreen(isDark: isDark),
-              const LoginFormWidget(),
-              DividerWidget(
-                isDark: isDark,
-                dividerText: TTexts.orSignInWith.capitalize!,
-              ),
-              const SizedBox(
-                height: AppSizes.spaceBtwSections,
-              ),
-              const SocialWidget()
-            ],
-          ),
+         padding: TSpacingStyle.paddingWithAppBarHeight,
+        child: Column(
+          children: [
+            ///Logo title &subtitle
+            HeaderLoginScreen(isDark: isDark),
+            const LoginFormWidget(),
+            DividerWidget(
+              isDark: isDark,
+              dividerText: TTexts.orSignInWith.capitalize!,
+            ),
+            const SizedBox(
+              height: AppSizes.spaceBtwSections,
+            ),
+            const SocialWidget()
+          ],
         ),
       ),
     );
