@@ -1,5 +1,5 @@
 import 'package:ecommerce/common/widgets/appbar/custom_app_bar.dart';
-import 'package:ecommerce/common/widgets/products/cart_menu_item.dart';
+import 'package:ecommerce/common/widgets/products/cart/cart_menu_item.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 
@@ -32,7 +32,13 @@ class HomeAppBar extends StatelessWidget {
           ),
         ],
       ),
-      actions: [CountCounterIcon(onPressed: () {}, iconColor: AppColors.white)],
+      actions: [
+        CountCounterIcon(
+          iconColor: AppColors.white,
+          counterBgColor: AppColors.black,
+          counterTextColor: AppColors.white,
+        )
+      ],
     );
   }
 }
